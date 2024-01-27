@@ -13,6 +13,26 @@
     src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
 
+.project__box {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .project__text {
+    flex: 1; /* Take remaining space */
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  .project__image {
+    flex: 0 0 300px; /* Fixed width for the image */
+  }
+
+  .project__image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -406,6 +426,7 @@ body:not(.user-is-tabbing) a:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    text-align: justify;
 }
 
 .header__text p {
@@ -535,6 +556,7 @@ body:not(.user-is-tabbing) a:focus {
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+        text-align: justify;
     }
     
     .about__photo-container {
@@ -546,6 +568,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+    text-align: justify;
 }
 
 
