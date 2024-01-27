@@ -26,6 +26,9 @@
 
   .project__image {
     flex: 0 0 300px; /* Fixed width for the image */
+    display: inline-block;
+    vertical-align: top; 
+    float: right;
   }
 
   .project__image img {
