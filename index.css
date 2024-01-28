@@ -23,6 +23,7 @@
     flex: 1; /* Take remaining space */
     text-align: justify;
     margin-right: 20px;
+    margin-left: 20px;
   }
 
   .project__image {
